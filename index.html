@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Flash Cards</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script src="js/lib/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js" ></script>
+        <script src="js/app.js"></script>
+        <script src="js/config.js" type="text/javascript"></script>
+        <script src="js/controllers/MainController.js"></script>
+        <script src="js/controllers/StatsController.js"></script>
+        <script src="js/controllers/NewCardController.js"></script>
+        <script src="js/controllers/CardManagerController.js"></script>
+        <script src="js/controllers/EditCardController.js"></script>
+        <script src="js/controllers/DeleteCardController.js"></script>
+        <script src="js/factories/FlashCardsFactory.js"></script>
+        <script src="js/factories/ScoreFactory.js"></script>
+        <script src="js/directives/loader/loader.js"></script>
+        <script src="js/directives/flash-card/flash-card.js"></script>
+        <script src="js/directives/border-on-hover.js"></script>
+        <script src="js/directives/error-message.js"></script>
+        <script src="js/directives/update-cards/update-cards.js"></script>
+        <script src="js/filters/cheat-filter.js"></script>
+    </head>
+
+    <body ng-app="FlashCards">
+      <ul>
+        <li ui-sref="flash-card">Flash Cards</li>
+        <li ui-sref="stats">Stats</li>
+        <li ui-sref="new-card">New Card</li>
+      </ul>
+      <ui-view></ui-view>
+    </body>
+
+</html>
